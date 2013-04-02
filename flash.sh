@@ -243,6 +243,10 @@ case "$DEVICE" in
 	flash_fastboot unlock $PROJECT
 	;;
 
+"ville")
+	flash_fastboot unlock $PROJECT
+	;;
+
 "galaxys2")
 	flash_heimdall $PROJECT
 	;;

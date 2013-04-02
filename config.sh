@@ -84,6 +84,11 @@ case "$1" in
 	repo_sync $1
 	;;
 
+"htc-one-s")
+	echo DEVICE=ville >> .tmp-config &&
+	repo_sync $1
+	;;
+
 "emulator")
 	echo DEVICE=generic >> .tmp-config &&
 	echo LUNCH=full-eng >> .tmp-config &&
@@ -109,6 +114,7 @@ case "$1" in
 	echo - inari
 	echo - keon
 	echo - pandaboard
+	echo - htc-one-s
 	echo - emulator
 	echo - emulator-x86
 	exit -1
